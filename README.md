@@ -8,10 +8,12 @@ This project is a Flask-based web application designed to analyze employee burno
 ## Project Structure
 
 ### 1. **Application Files**
-- **`app.py`**: The main Flask application script. It handles routes, predictions, and dynamic visualizations.
+- **`app.py`**: The main Flask application script. It handles routes, predictions, and dynamic visualizations.  
+  [View `app.py` on GitHub](https://github.com/your-github-repo/app.py)
 
 ### 2. **Data Files**
-- **`employee_burnout.xlsx`**: The dataset used for training and visualizations.
+- **`employee_burnout.xlsx`**: The dataset used for training and visualizations.  
+  [View `employee_burnout.xlsx` on GitHub](https://github.com/your-github-repo/employee_burnout.xlsx)
 
 ### 3. **Templates**
 Contains HTML files for rendering the web pages.
@@ -19,7 +21,10 @@ Contains HTML files for rendering the web pages.
 - **`visualization.html`**: Displays dynamic visualizations based on the dataset.
 
 ### 4. **Static**
-Contains static assets for the web application.
+Contains static assets for the web application, such as CSS, JavaScript, and images.
+- **`static/css/`**: Folder for CSS files.
+- **`static/js/`**: Folder for JavaScript files.
+- **`static/images/`**: Folder for images used in the app.
 
 ---
 
@@ -39,7 +44,7 @@ python -m venv env
 ### 3. Activate the Virtual Environment
 - **Windows**: 
   ```bash
-  .\env\Scripts\activate
+  .\env\Scriptsctivate
   ```
 - **Linux/Mac**:
   ```bash
@@ -79,4 +84,3 @@ http://127.0.0.1:5000/
 **Download the complete project folder below:**
 
 [Download Project Files](./employee_burnout_analysis.zip)
-
