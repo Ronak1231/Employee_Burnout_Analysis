@@ -101,6 +101,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contributors
 
-- [Ronak Bansal](https://https://github.com/Ronak1231) - Project Author
+- [Ronak Bansal](https://github.com/Ronak1231) - Project Author
 
-Feel free to contribute to this project by opening issues or submitting pull requests. If you have any questions or suggestions, please reach out via email at [ronak@example.com](mailto:ronakbansal12345@example.com).
+Feel free to contribute to this project by opening issues or submitting pull requests. If you have any questions or suggestions, please reach out via email at [ronakbansal12345@gmail.com](mailto:ronakbansal12345@gmail.com).
