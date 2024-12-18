@@ -62,9 +62,16 @@ cd employee-burnout-analysis
 
 2. Create a virtual environment:
 
+#### Windows:
 ```bash
 python -m venv venv
-source venv/bin/activate  # On Windows, use `venv\Scriptsctivate`
+venv\Scripts\activate
+```
+
+#### macOS/Linux:
+```bash
+python3 -m venv venv
+source venv/bin/activate
 ```
 
 3. Install the required dependencies:
