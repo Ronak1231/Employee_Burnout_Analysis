@@ -1,86 +1,106 @@
 
-# Employee Burnout Analysis and Prediction
+# Employee Burnout Prediction and Analysis
 
-This project is a Flask-based web application designed to analyze employee burnout based on factors like gender, company type, WFH setup, and resource allocation. It provides predictions for burnout rates and includes dynamic visualizations for data insights.
+This project uses machine learning to predict employee burnout levels based on factors like mental fatigue score, resource allocation, and work-from-home setup. The project is implemented using **Flask** for the web interface and **Scikit-learn** for the model. The goal is to help organizations identify potential burnout risks and take preventive measures.
 
----
+## Features
+
+- **Burnout Prediction**: Predicts the burnout rate based on various features like gender, company type, mental fatigue score, and resource allocation.
+- **Data Visualizations**: Provides various interactive visualizations to explore relationships between employee attributes and burnout.
+- **Flask Web Application**: A simple web interface to interact with the model and view visualizations.
+- **Model Persistence**: The trained model and scaler are saved as `.pkl` files to allow prediction without retraining.
+
+## Table of Contents
+
+- [Project Structure](#project-structure)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+- [Contributors](#contributors)
 
 ## Project Structure
 
-### 1. **Application Files**
-- **`app.py`**: The main Flask application script. It handles routes, predictions, and dynamic visualizations.  
-  [View `app.py` on GitHub](https://github.com/your-github-repo/app.py)
+The project is organized as follows:
 
-### 2. **Data Files**
-- **`employee_burnout.xlsx`**: The dataset used for training and visualizations.  
-  [View `employee_burnout.xlsx` on GitHub](https://github.com/your-github-repo/employee_burnout.xlsx)
-
-### 3. **Templates**
-Contains HTML files for rendering the web pages.
-- **`index.html`**: The homepage for inputting employee details and viewing predictions.
-- **`visualization.html`**: Displays dynamic visualizations based on the dataset.
-
-### 4. **Static**
-Contains static assets for the web application, such as CSS, JavaScript, and images.
-- **`static/css/`**: Folder for CSS files.
-- **`static/js/`**: Folder for JavaScript files.
-- **`static/images/`**: Folder for images used in the app.
-
----
-
-## Steps to Run the Project
-
-### 1. Clone the Repository
-```bash
-git clone <repository-url>
-cd <repository-folder>
+```
+employee-burnout-analysis/
+│
+├── app.py                # Main application script
+├── employee_burnout.xlsx # Dataset for employee burnout analysis
+├── requirements.txt      # Python dependencies
+├── static/               # Folder for static files (CSS, JS, Images)
+│   ├── css/              # CSS files
+│   ├── js/               # JavaScript files
+│   └── images/           # Visualization images
+├── templates/            # Folder for HTML templates
+│   ├── index.html        # Home page template
+│   └── visualization.html # Visualization page template
+└── README.md             # Project documentation (this file)
 ```
 
-### 2. Create a Virtual Environment
+- **[app.py](app.py)**: This is the main Flask application where the machine learning model is trained, evaluated, and predictions are made. It also serves the web pages.
+- **[employee_burnout.xlsx](employee_burnout.xlsx)**: This is the dataset used for training the model. It contains employee information including burnout rate and other relevant attributes.
+- **[requirements.txt](requirements.txt)**: Lists the required Python packages for the project. 
+- **[static/](static/)**: Contains static files like CSS, JavaScript, and images for the web interface.
+  - **[css/](static/css/)**: Contains the styling files for the web pages.
+  - **[js/](static/js/)**: Contains the JavaScript files for client-side interactivity.
+  - **[images/](static/images/)**: Stores visualizations that are dynamically generated.
+- **[templates/](templates/)**: Contains the HTML templates for rendering the web pages.
+  - **[index.html](templates/index.html)**: The home page where users can input their data to predict burnout rate.
+  - **[visualization.html](templates/visualization.html)**: Displays the visualizations of the data and allows the user to explore them.
+
+## Installation
+
+1. Clone the repository to your local machine:
+
 ```bash
-python -m venv env
+git clone https://github.com/your-username/employee-burnout-analysis.git
+cd employee-burnout-analysis
 ```
 
-### 3. Activate the Virtual Environment
-- **Windows**: 
-  ```bash
-  .\env\Scriptsctivate
-  ```
-- **Linux/Mac**:
-  ```bash
-  source env/bin/activate
-  ```
+2. Create a virtual environment:
 
-### 4. Install Required Dependencies
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows, use `venv\Scriptsctivate`
+```
+
+3. Install the required dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
 
-### 5. Run the Application
+4. Make sure to have the **employee_burnout.xlsx** file in the project directory.
+
+## Usage
+
+1. Run the Flask app:
+
 ```bash
 python app.py
 ```
 
-### 6. Access the Application
-Open your browser and navigate to:
-```
-http://127.0.0.1:5000/
-```
+2. Open your browser and go to [http://127.0.0.1:5000](http://127.0.0.1:5000).
+   - You will see a page to input the employee data for burnout prediction.
+   - Once you enter the details and click **Predict Burn Rate**, the predicted burnout rate will be displayed.
+   - You can also explore various data visualizations by navigating to the **Visualizations** page.
 
----
+## License
 
-## Prerequisites
-- Python 3.7 or above
-- pip
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
----
+## Acknowledgments
 
-## Key Features
-- User-friendly interface for input and predictions.
-- Visualizations to analyze burnout trends.
+- **Scikit-learn** for the machine learning model and tools.
+- **Flask** for creating the web interface.
+- **Seaborn** and **Matplotlib** for creating the visualizations.
+- Thanks to all contributors and open-source libraries that made this project possible.
 
----
+## Contributors
 
-**Download the complete project folder below:**
+- [Ronak Bansal](https://github.com/ronakbansal) - Project Author
 
-[Download Project Files](./employee_burnout_analysis.zip)
+Feel free to contribute to this project by opening issues or submitting pull requests. If you have any questions or suggestions, please reach out via email at [ronak@example.com](mailto:ronak@example.com).
