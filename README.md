@@ -27,17 +27,17 @@ The project is organized as follows:
 ```
 employee-burnout-analysis/
 │
-├── app.py                # Main application script
-├── employee_burnout.xlsx # Dataset for employee burnout analysis
-├── requirements.txt      # Python dependencies
-├── static/               # Folder for static files (CSS, JS, Images)
-│   ├── css/              # CSS files
-│   ├── js/               # JavaScript files
-│   └── images/           # Visualization images
-├── templates/            # Folder for HTML templates
-│   ├── index.html        # Home page template
+├── app.py                 # Main application script
+├── employee_burnout.xlsx  # Dataset for employee burnout analysis
+├── requirements.txt       # Python dependencies
+├── static/                # Folder for static files (CSS, JS, Images)
+│   ├── css/               # CSS files
+│   ├── js/                # JavaScript files
+│   └── images/            # Visualization images
+├── templates/             # Folder for HTML templates
+│   ├── index.html         # Home page template
 │   └── visualization.html # Visualization page template
-└── README.md             # Project documentation (this file)
+└── README.md              # Project documentation (this file)
 ```
 
 - **[app.py](app.py)**: This is the main Flask application where the machine learning model is trained, evaluated, and predictions are made. It also serves the web pages.
