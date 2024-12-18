@@ -56,7 +56,7 @@ employee-burnout-analysis/
 1. Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/employee-burnout-analysis.git
+git clone [https://github.com/your-username/employee-burnout-analysis.git](https://github.com/Ronak1231/Employee_Burnout_Analysis.git)
 cd employee-burnout-analysis
 ```
 
