@@ -1,0 +1,125 @@
+/* Full-screen background styling */
+body {
+    background: url('/static/images/2.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/* Centralized container for content */
+.container, .visualization-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.555); /* Semi-transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+/* Input Fields and Buttons */
+input, button {
+    width: 80%;
+    padding: 10px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Visualization Tabs */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.visualization-tab {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: all 0.3s ease-in-out;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.visualization-tab:hover {
+    background-color: #218838;
+    color: #fff;
+    box-shadow: 0 0 10px 2px rgba(34, 139, 34, 0.7); /* Glow effect */
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.visualization-tab:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px #28a745;
+}
+
+/* Visualization Images */
+.visualization-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Navigation Links */
+.nav-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.nav-link:hover {
+    background-color: #0056b3;
+}
+
+/* GitHub Link Styling */
+.github-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease-in-out;
+}
+
+.github-link:hover {
+    background-color: #0056b3;
+    color: #fff;
+    box-shadow: 0 0 10px 2px rgba(0, 123, 255, 0.7); /* Glow effect */
+    transform: scale(1.1);
+}
