@@ -37,6 +37,8 @@ employee-burnout-analysis/
 ├── templates/             # Folder for HTML templates
 │   ├── index.html         # Home page template
 │   └── visualization.html # Visualization page template
+├── trial/                 # Folder for additional resources or samples
+│   └── Employee_Burnout.ipynb # Jupyter Notebook with sample code
 └── README.md              # Project documentation (this file)
 ```
 
@@ -50,6 +52,8 @@ employee-burnout-analysis/
 - **[templates/](templates/)**: Contains the HTML templates for rendering the web pages.
   - **[index.html](templates/index.html)**: The home page where users can input their data to predict burnout rate.
   - **[visualization.html](templates/visualization.html)**: Displays the visualizations of the data and allows the user to explore them.
+- **[trial/](trial/)**: Contains additional resources or sample code.
+  - **[Employee_Burnout.ipynb](trial/Employee_Burnout.ipynb)**: A Jupyter Notebook providing sample code that complements the main codebase. It can be used to understand or test individual components of the project.
 
 ## Installation
 
